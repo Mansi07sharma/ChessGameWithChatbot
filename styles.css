@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("https://png.pngtree.com/background/20231027/original/pngtree-blurred-chess-pieces-in-the-background-with-a-3d-rendered-black-picture-image_5743620.jpg");
+    overflow: hidden;
+}
+
+img{
+    width: 65px;
+    height: 65px;
+}
+
+.chessboard {
+    height: 82.5vh;
+    width: 82.5vh;
+    background-color: grey;
+    margin: auto ;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square {
+    height: 10vh;
+    width: 10vh;
+    border: 1px solid black;
+}
+
+
+.highlight {
+    outline: 2px solid rgb(252, 118, 9);
+    box-shadow: 0 0 10px rgba(252, 118, 9, 0.8);
+    transition: outline 0.5s ease-in-out;
+}
+
+.botai{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    box-shadow: 20px 20px 50px rgba(1, 0, 0, 0.5);
+    margin: 10px;
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    animation: float 3s ease-in-out infinite;
+    cursor: pointer;
+}
+
+.cross{
+    width: 40px;
+    height: 40px;
+    color: rgb(248, 245, 245);
+    font-size: larger;
+    position: fixed;
+    right: 30px;
+    cursor: pointer;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.botai-message {
+    position: fixed;
+    bottom: 100px;
+    right: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}

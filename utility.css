@@ -1,0 +1,21 @@
+.white {
+    background-color: white;
+}
+
+.green {
+    background-color: rgb(90, 117, 48);
+}
+
+.hidden {
+    display: none;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex{
+    display: flex;
+} 

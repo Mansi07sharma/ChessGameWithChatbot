@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="promotion.css">
+    <link rel="stylesheet" href="chatbot.css">
+</head>
+
+<body>
+    <div id="popup" class="popup center">
+        <div class="popup-content">
+            <h2>Choose Your Side</h2>
+            <button id="golden" class="choice-btn">Golden</button>
+            <button id="silver" class="choice-btn">Silver</button>
+        </div>
+    </div>
+
+    <div id="promotionModal" class="modal">
+        <div class="modal-content">
+            <h2>Choose a piece for promotion</h2>
+            <button onclick="promotePawn('Queen')">Queen</button>
+            <button onclick="promotePawn('Rook')">Rook</button>
+            <button onclick="promotePawn('Bishop')">Bishop</button>
+            <button onclick="promotePawn('Knight')">Knight</button>
+        </div>
+    </div>
+
+    <div id="chessboard" class="chessboard hidden"></div>
+   
+
+    <img class="botai hidden" src="https://botnation.ai/site/wp-content/uploads/2024/01/chatbot-drupal.webp" alt="aibot">
+    <div class="chatbot hidden ">
+        <div class="upperBox">
+            ♞ Chess ChatBot is here!!
+            <div class="cross hidden">X</div>
+        </div>
+    <div class="autoMsg">
+        <span class="msg">How to play</span>
+        <span class="msg">How Knight moves</span>
+        <span class="msg">What is Checkmate</span>
+    </div>
+        <div class="lowerBox">
+            <input type="text" class="inputBox" placeholder="Type a message">
+            <button class="sendButton">Send</button>
+        </div>
+    </div>
+
+
+    <script src="chatbot.js"></script>
+    <script src="ChessScripts/chessPieces.js"></script>
+    <script src="ChessScripts/Pawn.js"></script>
+    <script src="ChessScripts/Knight.js"></script>
+    <script src="ChessScripts/Bishop.js"></script>
+    <script src="ChessScripts/Rook.js"></script>
+    <script src="ChessScripts/King.js"></script>
+    <script src="ChessScripts/Queen.js"></script>
+    <script src="ChessScripts/pawnPromotion.js"></script>
+    <script src="ChessScripts/Moves.js"></script>
+    <script src="ChessScripts/player.js"></script>
+    <script src="ChessScripts/startGame.js"></script>
+</body>
+
+</html>
